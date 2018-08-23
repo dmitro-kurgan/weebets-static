@@ -1,0 +1,135 @@
+$first_font-family-1: GothamPro, Arial, sans-serif;
+$first_font-family-2: GothamRounded, Arial, sans-serif;
+$second_font-family-1: Roboto, Arial, sans-serif;
+$main_color: #464661;
+$main_text-color: #fff;
+
+body {
+	background-color: $main_color;
+	font: 500 normal 12px $first_font-family-1;
+	min-width: 375px;
+}
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+// ----------------HEADER---------------------
+header {
+	.header {
+		// height: 100px;
+		background-color: $main_color;
+		position: fixed;
+		left: 0px;
+		right: 0px;
+		width: 100%;
+		top: 0px;
+		z-index: 99;
+		display: none;
+		@media screen and (max-width: 1170px) {
+			display: block;
+		}
+		&_inner {
+			padding: 15px 0;
+			@media screen and (max-width: 1170px) {
+				padding: 15px 10px;
+			}
+			.logo {
+				background: url(../images/logo.svg)no-repeat;
+				background-size: contain;
+				width: 100px;
+				height: 27px;
+				float: left;
+				@media screen and (max-width: 768px) {
+					height: 26px;
+				}
+			}
+			.entry {
+				min-width: 230px;
+				float: right;
+				@media screen and (max-width: 1170px){
+					min-width: 300px;
+					// margin-right: 10px;
+				}
+				@media screen and (max-width: 768px) {
+					min-width: 180px;
+				}
+				// @media screen and (max-width: 1024px){
+				// 	width: 330px;
+				// }
+				.pic {
+					background-image: url(../images/pic.png);
+					background-color: #fff;
+					border-radius: 50%;
+					// display: inline-block;
+					float: left;
+					width: 26px;
+					height: 26px;
+					background-size: cover;
+				}
+				.name {
+					display: inline-block;
+					font: 500 normal 12px $first_font-family-1;
+					color: #fff;
+					margin: 0 0px 0 10px;
+					@media screen and (max-width: 768px) {
+						display: none;
+					}
+				}
+				.btn {
+					display: inline-block;
+					height: 26px;
+					background-color: #24263e;
+					width: 75px;
+					// margin-left: 40px;
+					border-radius: 50px;
+					color: #8181a3;
+					font: 500 normal 12px $first_font-family-1;
+					margin-left: 20px;
+					letter-spacing: 0.7px;
+					padding: 5px 12px;
+
+					// @media screen and (max-width: 1024px) {
+					// 	margin-left: 20px;
+					// }
+				}
+				.hamburger-menu {
+					text-align: right;
+					margin-left: 30px;
+					width: 36px;
+					// margin-top: -7px;
+					display: none;
+					position: relative;
+					@media screen and (max-width: 1170px) {
+						display: inline-block;
+						float: right;
+					}
+					@media screen and (max-width: 768px) {
+						margin-left: 20px;
+					}
+					&_top, &_mid, &_bottom {
+						background-color: #fff;
+						display: inline-block;
+						height: 1px;
+						width: 36px;
+						position: absolute;
+						right: 0px;
+						top: 1px;
+					}
+					&_mid {
+						// margin-top: 7px;
+						width: 25px;
+						top: 13px;
+					}
+					&_bottom {
+						// margin-top: 7px;
+						top: 23px;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}

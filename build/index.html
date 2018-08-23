@@ -1,0 +1,259 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <title>WeeBets</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./css/index.css" rel="stylesheet"></head>
+<body>
+  <div id="hellopreloader">
+    <div id="hellopreloader_preload">
+      <div class="circle"></div>
+    </div>
+  </div>
+  <header>
+    <div class="header container-fluid">
+      <div class="header_inner clearfix"><a class="logo" href="#" id="logo"></a>
+        <div class="usr-pan" id="usr-pan">
+          <div class="entry"><a href="#">
+              <div class="pic"></div>
+              <div class="name">Frances Hudson		</div></a><a class="btn" href="#">Log out</a>
+            <div class="hamburger-menu" id="HamMenu"><span class="hamburger-menu_top"></span><span class="hamburger-menu_mid"></span><span class="hamburger-menu_bottom"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <aside class="left-sidebar">
+    <div class="left-sidebar_logo clearfix" id="LeftSideLogo"></div>
+    <ul>
+      <li><a href="#">Spins Detail<img class="svg" src="./images/cw.svg" width="32px"></a></li>
+      <li><a href="#">User Detail<img class="svg" src="./images/users.svg" width="32px"></a></li>
+      <li><a href="#">Spins<img class="svg" src="./images/cw.svg" width="32px"></a></li>
+      <li><a href="#">Users<img class="svg" src="./images/users.svg" width="32px"></a></li>
+      <li><a href="#">Turnover<img class="svg" src="./images/credit.svg" width="32px"></a></li>
+      <li><a href="#">User activity<img class="svg" src="./images/users.svg" width="32px"></a></li>
+    </ul>
+    <div class="left-sidebar_bottom">
+      <div class="left-sidebar_usr-pan" id="LeftSideUsrPan"></div><a href="#">Settings</a>
+      <p>
+         Copyright of<br>Company name©		</p>
+    </div>
+  </aside>
+  <div class="page-wrapper">
+    <div class="container-fluid">
+      <ul class="row" id="row-top">
+        <li class="col-md-6 col-sm-4" id="col-top-left">
+          <div class="spins-det main-block" id="spins-det">
+            <div class="title">
+              <h3>Spins Detail</h3>
+            </div>
+            <div class="spins-det_left" id="spins-det_left">
+              <table class="table" id="ftable">
+                <thead>
+                  <tr>
+                    <th>Games</th>
+                    <th>Spins</th>
+                    <th>Cash, USD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr data-id="first">
+                    <td>Honorable Society</td>
+                    <td>132 456 678</td>
+                    <td>132 456 678</td>
+                  </tr>
+                  <tr data-id="second">
+                    <td>Lords Of Westerous</td>
+                    <td>59 0567 506</td>
+                    <td>59 0567 506</td>
+                  </tr>
+                  <tr data-id="third">
+                    <td>Ancient Runner</td>
+                    <td>7 985 876</td>
+                    <td>7 985 876</td>
+                  </tr>
+                  <tr data-id="fourth">
+                    <td>Kingdom Of Liberty</td>
+                    <td>805 672</td>
+                    <td>805 672</td>
+                  </tr>
+                  <tr data-id="fifth">
+                    <td>Island Of Happiness</td>
+                    <td>54 985</td>
+                    <td>54 985</td>
+                  </tr>
+                  <tr data-id="sixth">
+                    <td>Lions Of Might and Magic</td>
+                    <td>3 257</td>
+                    <td>3 257</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="spins-det_right" id="spins-det_right">
+              <div class="piechart" id="chart1"></div>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-6 col-sm-8" id="col-top-right">
+          <div class="user-det main-block" id="user-det">
+            <div class="title clearfix">
+              <h3>User Detail</h3><span class="traffic active" id="traffic">Traffic</span><span class="gadgets" id="gadgets">Gadgets</span>
+              <div class="title_right">
+                <p>With deposits: <span>564</span></p>
+                <p>Come back: <span>23 543</span></p>
+                <p>New: <span>23 543</span></p>
+              </div>
+            </div>
+            <div class="user-det_left"><span>Traffic</span>
+              <ul>
+                <li><a data-id="direct">Direct</a></li>
+                <li><a data-id="organic">Organic Search</a></li>
+                <li><a data-id="referral">Referral</a></li>
+                <li><a data-id="social">Social</a></li>
+                <li><a data-id="other">(Other)</a></li>
+              </ul>
+            </div>
+            <div class="user-det_center">
+              <div class="traffic piechart" id="chart2"></div>
+            </div>
+            <div class="user-det_right"><span>Gadgets</span>
+              <ul>
+                <li><a data-id="apple1">Apple IPhone X</a></li>
+                <li><a data-id="apple2">Apple IPhone 5SE</a></li>
+                <li><a data-id="google">Google Pixel XL</a></li>
+                <li><a data-id="htc">HTC U11</a></li>
+                <li><a data-id="xperia">Zony Xperia XZ</a></li>
+                <li><a data-id="galaxy">Samsung Galaxy Note 8</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="row" id="row-mid">
+        <li class="col-md-4 col-sm-8" id="col-mid-left">
+          <div class="spins main-block" id="spins">
+            <div class="chart" id="chart3"></div>
+            <div class="title">
+              <h3>Spins<img class="svg" src="./images/cw.svg" width="32px"></h3>
+            </div>
+            <div class="quantity-total"> 
+              <p>136 342 000</p>
+            </div>
+            <div class="quantity-stats"> 
+              <p>Spins per second: <span class="quantity-stats_arrow"><img class="svg red" src="./images/arrow-long-down.svg" width="32px"></span><span class="quantity-stats_num">132</span></p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-4 col-sm-4" id="col-mid-mid">
+          <div class="users main-block" id="users">
+            <div class="chart" id="chart4"></div>
+            <div class="title">
+              <h3>Users<img class="svg" src="./images/users.svg" width="32px"></h3>
+            </div>
+            <div class="quantity-total"> 
+              <p>23 543</p>
+            </div>
+            <div class="quantity-stats">
+              <p>New: <span class="quantity-stats_arrow"><img class="svg green" src="./images/arrow-long-up.svg" width="32px"></span><span class="quantity-stats_num">232</span></p>
+              <p>Return: <span class="quantity-stats_arrow"><img class="svg red" src="./images/arrow-long-down.svg" width="32px"></span><span class="quantity-stats_num">232</span></p>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-4" id="col-mid-right">
+          <div class="turnover main-block" id="turnover">
+            <div class="chart" id="chart5"></div>
+            <div class="title">
+              <h3>Turnover<img class="svg" src="./images/credit.svg" width="32px"></h3>
+            </div>
+            <div class="quantity-total">
+              <p>13 000 532</p>
+            </div>
+            <div class="quantity-stats">
+              <p>Bets: <span class="quantity-stats_arrow"><img class="svg green" src="./images/arrow-long-up.svg" width="32px"></span><span class="quantity-stats-num">56000</span></p>
+              <p>Spins: <span class="quantity-stats_arrow"><img class="svg green" src="./images/arrow-long-up.svg" width="32px"></span><span class="quantity-stats-num">43000						</span></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="row" id="row-bottom">
+        <li class="col-md-6 col-sm-4" id="col-bottom-left">
+          <div class="map main-block" id="map">
+            <div class="title">
+              <h3>User Activity on the map</h3>
+              <div class="switchmap"><a>Spins</a><a class="active">Bets</a></div>
+            </div>
+            <div class="map-wrapper">
+              <div class="world-map" id="bubbles"></div>
+            </div>
+          </div>
+        </li>
+        <li class="col-md-6 col-sm-8" id="col-bottom-right">
+          <div class="turnover-det main-block" id="turnover-det">
+            <div class="title">
+              <h3>Turnover details</h3>
+              <div class="switchtab"><a href="#" data-table="month">month</a><a href="#" data-table="week">week</a><a class="active" href="#" data-table="day">day	</a></div>
+            </div>
+            <table class="table" id="turntab">
+              <thead>
+                <tr>
+                  <th>Player Only</th>
+                  <th class="day">Day</th>
+                  <th class="week">Week</th>
+                  <th class="month">Month</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Medium cycle</td>
+                  <td class="day">2356</td>
+                  <td class="week">132 456</td>
+                  <td class="month">132 456 678</td>
+                </tr>
+                <tr>
+                  <td>Medium deposit</td>
+                  <td class="day">2356</td>
+                  <td class="week">132 456</td>
+                  <td class="month">132 456 678</td>
+                </tr>
+                <tr>
+                  <td>Medium Income</td>
+                  <td class="day">2356</td>
+                  <td class="week">132 456</td>
+                  <td class="month">132 456 678</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th>Player Only</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>GGP</td>
+                  <td class="day">2356</td>
+                  <td class="week">132 456</td>
+                  <td class="month">132 456 678</td>
+                </tr>
+                <tr>
+                  <td>RTP</td>
+                  <td class="day">2356</td>
+                  <td class="week">132 456</td>
+                  <td class="month">132 456 678</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </li>
+      </ul>
+      <ul class="row" id="row-add"></ul>
+      <li class="col-md-12" id="col-add"></li>
+    </div>
+  </div>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script></body>

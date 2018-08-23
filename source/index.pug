@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	title WeeBets
+	meta(charset="UTF-8")
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+body
+	#hellopreloader
+		#hellopreloader_preload
+			.circle
+	header
+		.header.container-fluid
+			.header_inner.clearfix
+				a(href="#").logo#logo
+				.usr-pan#usr-pan
+					.entry
+						a(href="#")
+							.pic
+							.name Frances Hudson		
+						a.btn(href="#") Log out
+						.hamburger-menu#HamMenu
+							span.hamburger-menu_top
+							span.hamburger-menu_mid
+							span.hamburger-menu_bottom
+	aside.left-sidebar
+		.left-sidebar_logo.clearfix#LeftSideLogo
+		ul
+			li
+				a(href="#") Spins Detail
+					img.svg(src=require("./images/cw.svg"), width="32px")
+			li
+				a(href="#") User Detail
+					img.svg(src=require("./images/users.svg"), width="32px")
+			li
+				a(href="#") Spins
+					img.svg(src=require("./images/cw.svg"), width="32px")
+			li
+				a(href="#") Users
+					img.svg(src=require("./images/users.svg"), width="32px")
+			li
+				a(href="#") Turnover
+					img.svg(src=require("./images/credit.svg"), width="32px")
+			li
+				a(href="#") User activity
+					img.svg(src=require("./images/users.svg"), width="32px")
+		.left-sidebar_bottom
+			.left-sidebar_usr-pan#LeftSideUsrPan
+			a(href="#") Settings
+			p 
+				|Copyright of
+				br
+				|Company name©		
+	.page-wrapper
+		.container-fluid
+			ul.row#row-top
+				li.col-md-6.col-sm-4#col-top-left
+					.spins-det.main-block#spins-det
+						.title
+							h3 Spins Detail
+						.spins-det_left#spins-det_left
+							table.table#ftable
+								thead
+									tr
+										th Games
+										th Spins
+										th Cash, USD
+								tbody
+									tr(data-id='first')
+										td Honorable Society
+										td 132 456 678
+										td 132 456 678
+									tr(data-id='second')
+										td Lords Of Westerous
+										td 59 0567 506
+										td 59 0567 506
+									tr(data-id='third')
+										td Ancient Runner
+										td 7 985 876
+										td 7 985 876
+									tr(data-id='fourth')
+										td Kingdom Of Liberty
+										td 805 672
+										td 805 672
+									tr(data-id='fifth')
+										td Island Of Happiness
+										td 54 985
+										td 54 985
+									tr(data-id='sixth')
+										td Lions Of Might and Magic
+										td 3 257
+										td 3 257
+						.spins-det_right#spins-det_right
+							#chart1.piechart
+				li.col-md-6.col-sm-8#col-top-right
+					.user-det.main-block#user-det
+						.title.clearfix
+							h3 User Detail
+							span.traffic.active#traffic Traffic
+							span.gadgets#gadgets Gadgets
+							.title_right
+								p With deposits: 
+									span 564
+								p Come back: 
+									span 23 543
+								p New: 
+									span 23 543
+						.user-det_left
+							span Traffic
+							ul
+								li
+									a(data-id='direct') Direct
+								li
+									a(data-id='organic') Organic Search
+								li
+									a(data-id='referral') Referral
+								li
+									a(data-id='social') Social
+								li
+									a(data-id='other') (Other)
+						.user-det_center
+							#chart2.traffic.piechart
+						.user-det_right
+							span Gadgets
+							ul
+								li
+									a(data-id='apple1') Apple IPhone X
+								li
+									a(data-id='apple2') Apple IPhone 5SE
+								li
+									a(data-id='google') Google Pixel XL
+								li
+									a(data-id='htc') HTC U11
+								li
+									a(data-id='xperia') Zony Xperia XZ
+								li
+									a(data-id='galaxy') Samsung Galaxy Note 8
+			ul.row#row-mid
+				li.col-md-4.col-sm-8#col-mid-left
+					.spins.main-block#spins
+						#chart3.chart
+						.title
+							h3 Spins
+								img.svg(src=require("./images/cw.svg"), width="32px")
+						.quantity-total 
+							p 136 342 000
+						.quantity-stats 
+							p Spins per second: 
+								span.quantity-stats_arrow
+									img.svg.red(src=require("./images/arrow-long-down.svg"), width="32px")
+								span.quantity-stats_num 132
+				li.col-md-4.col-sm-4#col-mid-mid
+					.users.main-block#users
+						#chart4.chart
+						.title
+							h3 Users
+								img.svg(src=require("./images/users.svg"), width="32px")
+						.quantity-total 
+							p 23 543
+						.quantity-stats
+							p New: 
+								span.quantity-stats_arrow
+									img.svg.green(src=require("./images/arrow-long-up.svg"), width="32px")
+								span.quantity-stats_num 232
+							p Return: 
+								span.quantity-stats_arrow
+									img.svg.red(src=require("./images/arrow-long-down.svg"), width="32px")
+								span.quantity-stats_num 232
+				li.col-md-4#col-mid-right
+					.turnover.main-block#turnover
+						#chart5.chart
+						.title
+							h3 Turnover
+								img.svg(src=require("./images/credit.svg"), width="32px")
+						.quantity-total
+							p 13 000 532
+						.quantity-stats
+							p Bets: 
+								span.quantity-stats_arrow
+									img.svg.green(src=require("./images/arrow-long-up.svg"), width="32px")
+								span.quantity-stats-num 56000
+							p Spins: 
+								span.quantity-stats_arrow
+									img.svg.green(src=require("./images/arrow-long-up.svg"), width="32px")
+								span.quantity-stats-num 43000						
+			ul.row#row-bottom
+				li.col-md-6.col-sm-4#col-bottom-left
+					.map.main-block#map
+						.title
+							h3 User Activity on the map
+							.switchmap
+								a Spins
+								a.active Bets
+						.map-wrapper
+							.world-map#bubbles
+				li.col-md-6.col-sm-8#col-bottom-right
+					.turnover-det.main-block#turnover-det
+						.title
+							h3 Turnover details
+							.switchtab
+								a(href="#", data-table="month") month
+								a(href="#", data-table="week") week
+								a.active(href="#", data-table="day") day	
+						table.table#turntab
+							thead
+								tr
+									th Player Only
+									th.day Day
+									th.week Week
+									th.month Month
+							tbody
+								tr
+									td Medium cycle
+									td.day 2356
+									td.week 132 456
+									td.month 132 456 678
+								tr
+									td Medium deposit
+									td.day 2356
+									td.week 132 456
+									td.month 132 456 678
+								tr
+									td Medium Income
+									td.day 2356
+									td.week 132 456
+									td.month 132 456 678
+							thead
+								tr
+									th Player Only
+									th
+									th
+									th
+							tbody
+								tr
+									td GGP
+									td.day 2356
+									td.week 132 456
+									td.month 132 456 678
+								tr
+									td RTP
+									td.day 2356
+									td.week 132 456
+									td.month 132 456 678
+			ul.row#row-add
+			li.col-md-12#col-add
+	script(src="https://d3js.org/d3.v4.min.js")
+	script(src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js")

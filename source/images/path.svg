@@ -1,0 +1,12 @@
+<svg width="137" height="37" viewBox="0 0 137 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Path 4</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-2393 -631)">
+<g id="Path 4" opacity="0.299479">
+<use xlink:href="#path0_stroke" transform="matrix(-1 0 0 1 2529.08 632)" fill="#FFFFFF"/>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 15.3642 15.0258L 14.9843 14.7008L 14.9758 14.7107L 14.9679 14.721L 15.3642 15.0258ZM 19.2388 10.4971L 19.6187 10.8222L 19.2388 10.4971ZM 135.178 -0.5L 42.0343 -0.5L 42.0343 0.5L 135.178 0.5L 135.178 -0.5ZM 18.8588 10.1721L 14.9843 14.7008L 15.7441 15.3509L 19.6187 10.8222L 18.8588 10.1721ZM 14.9679 14.721L -0.396317 34.6952L 0.396317 35.3048L 15.7605 15.3307L 14.9679 14.721ZM 42.0343 -0.5C 33.1209 -0.5 24.6535 3.39916 18.8588 10.1721L 19.6187 10.8222C 25.2233 4.27132 33.4131 0.5 42.0343 0.5L 42.0343 -0.5Z"/>
+</defs>
+</svg>
